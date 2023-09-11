@@ -10,12 +10,17 @@
   "author": "Emmanuelbreezy",
   "license": "ISC",
   "dependencies": {
+    "@apollo/client": "^3.8.1",
+    "@chakra-ui/react": "^2.8.0",
     "colors": "^1.4.0",
+    "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "express-graphql": "^0.12.0",
     "graphql": "^15.8.0",
-    "mongoose": "^7.3.1"
+    "mongoose": "^7.3.1",
+    "react-icons": "^4.10.1",
+    "react-router-dom": "^6.15.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.22"
