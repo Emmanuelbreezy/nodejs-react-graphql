@@ -42,26 +42,26 @@ const projectType = new GraphQLObjectType({
 const RootQuery = new GraphQLObjectType({
 	name: 'RootQueryType',
 	fields: {
-		projects: {
+		allProjects: {
 			type: new GraphQLList(projectType),
             resolve(parent, args){
                 return Project.find({});
             }
 		},
-		project:{
+		singleProject:{
 			type: projectType,
 			args: { id: {type: GraphQLID } },
 			resolve(parent, args){
 				return Project.findById(args.id);
 			}
 		},
-		clients: {
+		allClients: {
 			type: new GraphQLList(clientType),
             resolve(parent, args){
                 return Client.find({});
             }
 		},
-		client:{
+		singleClient:{
 			type: clientType,
 			args: { id: {type: GraphQLID } },
 			resolve(parent, args){
